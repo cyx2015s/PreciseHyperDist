@@ -4,7 +4,7 @@ from fractions import Fraction as Frc
 def fac(n):
     res = 1
     for i in range(1, n + 1):
-        res *= n
+        res *= i
     return res
 
 
