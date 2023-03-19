@@ -30,10 +30,10 @@ def hyper(_n, _N, _M, _k):
 
 def hyper_likelihood(_n, _N, _M, _k):
     ret = [
-        Frc(k * (N + 1), M),
-        Frc(n * M, k),
-        Frc(k * (N + 1), n),
-        Frc((n + 1) * (M + 1), (N + 2)),
+        Frc(_k * (_N + 1), _M),
+        Frc(_n * _M, _k),
+        Frc(_k * (_N + 1), _n),
+        Frc((_n + 1) * (_M + 1), (_N + 2)),
     ]
     return tuple(ret)
 
